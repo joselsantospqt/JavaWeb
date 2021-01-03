@@ -1,0 +1,668 @@
+/* Please see documentation at https://docs.microsoft.com/aspnet/core/client-side/bundling-and-minification\ 
+for details on configuring this project to bundle and minify static web assets. */
+
+/*PADRÕES PARA USAR COMO BASE PARA O SITE*/
+body, html {
+    height: 100%;
+}
+
+body {
+    background-color: #eef7ff !important;
+}
+
+.row {
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+}
+
+.blackColor {
+    color: black !important;
+}
+
+
+.whiteColor {
+    color: white;
+}
+
+.BlueColor {
+    color: #006bb1;
+}
+
+/* Monochrome Colors
+------------------------------------
+ */
+.bg-boxborderbottom {
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.bg-boxshadow {
+    box-shadow: 10px 17px 13px #5f5b5b;
+}
+
+.bg-maps {
+    background-image: url(../images/Originais/bg-maps.png);
+    width: 100%;
+    height: 100%;
+    /* padding: 10%; */
+    padding: 6%;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
+
+.bg-master {
+    background-color: #626262;
+}
+
+.bg-master-white {
+    background-color: white;
+}
+
+.bg-master-light {
+    background-color: #e6e6e6;
+}
+
+.bg-master-lighter {
+    background-color: #f0f0f0;
+}
+
+.bg-master-lightest {
+    background-color: #fafafa;
+}
+
+.bg-master-dark {
+    background-color: #2c2c2c;
+}
+
+.bg-master-darker {
+    background-color: #1a1a1a;
+}
+
+.bg-master-darkest {
+    background-color: #121212;
+}
+
+/* Contextual Colors
+------------------------------------
+*/
+/* Primary
+------------------------------------
+*/
+.bg-primary {
+    background-color: #6d5cae !important;
+}
+
+.bg-primary-dark {
+    background-color: #584b8d;
+}
+
+.bg-primary-darker {
+    background-color: #413768;
+}
+
+.bg-primary-light {
+    background-color: #8a7dbe;
+}
+
+.bg-primary-lighter {
+    background-color: #e2deef;
+}
+
+/* Complete 
+------------------------------------
+*/
+.bg-complete {
+    background-color: #48b0f7;
+}
+
+.bg-complete-dark {
+    background-color: #000;
+}
+
+.bg-complete-darker {
+    background-color: #2b6a94;
+}
+
+.bg-complete-light {
+    background-color: #6dc0f9;
+}
+
+.bg-complete-lighter {
+    background-color: #daeffd;
+}
+
+/* Success 
+------------------------------------
+*/
+.bg-success {
+    background-color: #10cfbd !important;
+}
+
+.bg-success-dark {
+    background-color: #0da899;
+}
+
+.bg-success-darker {
+    background-color: #0a7c71;
+}
+
+.bg-success-light {
+    background-color: #40d9ca;
+}
+
+.bg-success-lighter {
+    background-color: #cff5f2;
+}
+
+/* Info
+------------------------------------
+*/
+.bg-info {
+    background-color: #3b4752 !important;
+}
+
+.bg-info-dark {
+    background-color: #303a42;
+}
+
+.bg-info-darker {
+    background-color: #232b31;
+}
+
+.bg-info-light {
+    background-color: #626c75;
+}
+
+.bg-info-lighter {
+    background-color: #d8dadc;
+}
+
+/* Danger 
+------------------------------------
+*/
+.bg-danger {
+    background-color: #f55753 !important;
+}
+
+.bg-danger-dark {
+    background-color: #c64643;
+}
+
+.bg-danger-darker {
+    background-color: #933432;
+}
+
+.bg-danger-light {
+    background-color: #f77975;
+}
+
+.bg-danger-lighter {
+    background-color: #fddddd;
+}
+
+/* Warning
+------------------------------------
+ */
+.bg-warning {
+    background-color: #f8d053 !important;
+}
+
+.bg-warning-dark {
+    background-color: #c9a843;
+}
+
+.bg-warning-darker {
+    background-color: #957d32;
+}
+
+.bg-warning-light {
+    background-color: #f9d975;
+}
+
+.bg-warning-lighter {
+    background-color: #fef6dd;
+}
+
+/* More Color Options
+------------------------------------
+*/
+/* Menu 
+------------------------------------
+*/
+.bg-menu-dark {
+    background-color: #21252d;
+}
+
+.bg-menu {
+    background-color: #2b303b;
+}
+
+.bg-menu-light {
+    background-color: #788195;
+}
+/*---------------------FLEXBOX---------------------------*/
+
+.alinhaCentro {
+    text-align: center;
+}
+
+.alinhaEsquerda {
+    text-align: left;
+}
+
+.alinhaDireita {
+    text-align: right;
+}
+
+.flex-end {
+    align-content: flex-end;
+}
+
+
+
+/*-------------------- MENU -------------------*/
+
+
+.navbar .navbar-brand .navbar-logo {
+    height: 1.5em;
+}
+
+.navbar.scrolling-navbar.top-nav-collapse {
+    background-color: #272731 !important;
+}
+
+
+.footer {
+    width: auto;
+    height: auto !important;
+    background-color: #00204a;
+    color: white;
+}
+
+
+
+    .footer .redeSociais {
+        float: left !important;
+        text-align: justify !important;
+        padding-bottom: 3em;
+    }
+
+ 
+.footer-content {
+    margin: 0 4.16%;
+}
+
+
+.footer h1 {
+    margin: 0 0 10px 0;
+    padding: 0;
+    font-family: inherit;
+    font-size: 25px;
+    line-height: 17px;
+    padding: 20px 0px 10px 0px;
+    color: #fff;
+    font-weight: normal;
+    /*text-transform: uppercase;
+        letter-spacing: 0.250em;*/
+}
+
+
+.footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+    .footer ul li {
+        color: white;
+        margin-bottom: 3%;
+        /* font-family: inherit; */
+        /* font-weight: bold; */
+        /* padding: 5px 0px 5px 0px; */
+    }
+
+        .footer ul li:last-child {
+            margin-bottom: 0 !important;
+        }
+
+
+    .footer ul h5 {
+        color: white;
+        margin-bottom: 0;
+        /* font-family: inherit; */
+        /* font-weight: bold; */
+        /* padding: 5px 0px 5px 0px; */
+    }
+
+
+
+
+.footer .redeSociais a {
+    margin-right: 0px;
+    padding-left: 0px;
+    margin-top: 50em;
+}
+
+
+
+/*-----------------------    ALINHAMENTOS--------------------*/
+
+
+
+@media screen and (max-width: 2560px) {
+ 
+
+}
+
+@media screen and (max-width: 1440px) {
+
+}
+
+@media screen and (min-width: 1200px) {
+
+
+    a.nav-link {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 1178px) {
+
+    .nav-link {
+        border-bottom: 2px solid transparent;
+        font-size: .79rem;
+        padding-right: .7rem;
+        padding-left: .7rem;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+
+    /*PAGINA LAYOUT*/
+
+    .navbar-expand-lg .navbar-nav .nav-link {
+        border-bottom: 2px solid transparent;
+        font-size: .79rem;
+        padding-right: .7rem;
+        padding-left: .7rem;
+    }
+
+    .mandala {
+        height: 70vh !important;
+    }
+}
+
+@media screen and (max-width: 991px) {
+
+
+    /*PAGINA LAYOUT*/
+    .navbar-nav.nav-flex-icons.redeSocial {
+        display: none !important;
+    }
+
+    .navbar.scrolling-navbar {
+        background-color: #00204a !IMPORTANT;
+    }
+
+    .carousel.demo-trust {
+        display:none !important;
+    }
+    .navbar-nav.smooth-scroll {
+
+        padding-top: 2rem;
+    }
+
+    .navbar-expand-lg .navbar-nav .nav-link:hover {
+        color: rgba(255, 255, 255, .75);
+        border-bottom: 1px solid white;
+        width: 50%;
+    }
+    /*FONTES RESPONSIVO !!!*/
+    .titleBold {
+        font-size: 1.5em !important;
+    }
+
+    .titleLead {
+        font-size: 1em !important;
+    }
+
+    .text-newsletter{
+        text-align:center !important;
+    }
+
+    .trust-gradient .display-3 {
+        font-size: 3rem !important;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    /*PAGINA INDEX*/
+    .navbar-expand-lg .navbar-nav .nav-link {
+        border-bottom: 2px solid transparent;
+        width: 50%;
+        font-size: .98rem;
+        padding-right: .7rem;
+        padding-left: .7rem;
+    }
+
+
+}
+
+@media screen and (max-width: 425px) {
+
+    /*PAGINA PRODUTOS*/
+    .mandala {
+        height: 50vh !important;
+    }
+}
+
+@media screen and (max-width: 414px) {
+}
+
+@media screen and (max-width: 411px) {
+        
+    /*PAGINA PRODUTOS*/
+    .mandala {
+        height: 48vh !important;
+    }
+ 
+}
+
+@media screen and (max-width: 375px) {
+
+    .mandala {
+        height: 44vh !important;
+    }
+
+
+   
+}
+
+@media screen and (max-width: 360px) {
+
+    .mandala {
+        height: 55vh !important;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .descricao-jarallax p:nth-child(2) {
+        font-size: 1.3em !important;
+    }
+
+    
+
+ 
+}
+
+
+
+/*------------HEADER MENU--------------*/
+.view {
+    height: 100vh;
+}
+
+.rgba-gradient {
+    background: -moz-linear-gradient(45deg, rgba(213, 15, 61, 0.6), rgba(13, 17, 198, 0.69) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(213, 15, 61, 0.6), rgba(13, 17, 198, 0.69) 100%);
+    background: linear-gradient(to 45deg, rgba(213, 15, 61, 0.6), rgba(13, 17, 198, 0.69) 100%);
+}
+
+.trust-gradient {
+    background: -moz-linear-gradient(45deg, rgba(0, 90, 150, 0.42), rgba(66, 83, 139, 0.65) 100%);
+    background: -webkit-linear-gradient(45deg, rgba(0, 90, 150, 0.42), rgba(66, 83, 139, 0.65) 100%);
+    background: linear-gradient(to 45deg, rgba(0, 90, 150, 0.42), rgba(66, 83, 139, 0.65) 100%);
+}
+
+
+.side-nav .sidenav-bg, .view .mask {
+    background-attachment: fixed;
+    bottom: 0;
+}
+
+
+/*------------ PARALLAX INDEX-------------*/
+
+
+.parallax {
+    width: 100% !important;
+    height: 100% !important;
+    background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: 50% 0 !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+}
+
+
+.img-1 {
+    background-image: url(../images/Icones/img1.png);
+}
+
+
+.img-2 {
+    background-image: url(../images/Icones/slider-3.jpg);
+}
+
+
+
+/*------------ AJUSTES-------------*/
+.w-65 {
+    width: 66% !important;
+}
+
+
+.h-35 {
+    height: 35% !important;
+}
+
+.text-blue-new {
+    color: #00204A;
+}
+
+.text-gray-new {
+    color: #394c5b;
+}
+
+.text-normal {
+    font-size: 19px;
+}
+
+.b-bottom-gray {
+    border-bottom: 17px solid #f1f1f1;
+    width: 41em;
+}
+
+/*------------ JARALLAX VÍDEO-------------*/
+/*.view.video_intro {
+    height: 114vh;
+}
+
+.embed-responsive {
+    height: 100%;
+}
+
+.embed-responsive-item {
+    top: -15px;
+}*/
+
+
+/*------------ SCROLLBAR-------------*/
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #555;
+}
+
+/*------------ CARD TESTIMONIAL-------------*/
+.card-dashed {
+    border-width: 3px;
+    border-top-style: dashed;
+    border-color: gray;
+    margin-bottom: 3px;
+}
+
+.card.testimonial-card {
+    background-color: #42538b !important;
+    border-radius: inherit !important;
+    margin-top: 5px;
+}
+
+
+.avatar.foto {
+    border: 8px solid #42538b !important;
+}
+
+.card-height {
+    height: 16em;
+}
+
+
+.wow.fadeIn {
+    margin-top: 25px;
+    font-size: 21px;
+    text-align: center;
+    -webkit-animation: fadein 2s; /* Safari, Chrome and Opera > 12.1 */
+    -moz-animation: fadein 2s; /* Firefox < 16 */
+    -ms-animation: fadein 2s; /* Internet Explorer */
+    -o-animation: fadein 2s; /* Opera < 12.1 */
+    animation: fadein 2s;
+}
+.md-form label{
+color: black !important;
+}
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 60px !important;
+    height: 60px !important;
+    outline: black;
+    background-size: 100%, 100%;
+    border-radius: 50%;
+    border: 1px solid black;
+    background-color: #00204a;
+}
+
+.backgroundWall {
+    height: auto !important;
+    background: url(../imagens/container/01.jpg) no-repeat;
+    background-repeat: no-repeat !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    background-size: cover !important;
+  }
